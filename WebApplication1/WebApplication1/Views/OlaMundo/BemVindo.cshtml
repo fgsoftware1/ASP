@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "BemVindo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>BemVindo</h1>
+
+<h2>Vamos mostrar @ViewData["NumVezes"] vezes a mensagem:</h2>
+
+<ul>
+    @for(int i = 0; i < (int)ViewData["NumVezes"]; i++)
+    {
+        <li>@ViewData["Mensagem"]</li>
+    }
+</ul>
