@@ -24,7 +24,7 @@
 <h3>Mensagem: @texto</h3>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Criar</a>
 </p>
 <table class="table">
     <thead>
@@ -55,11 +55,11 @@
                 @Html.DisplayFor(modelItem => item.Idade)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Editar", "Edit", new { item.ID }) |
+                @Html.ActionLink("Detalhes", "Details", new { item.ID }) |
+                @Html.ActionLink("Eliminar", "Delete", new { item.ID }) 
             </td>
-        </tr>
+        </tr> 
 }
     </tbody>
 </table>

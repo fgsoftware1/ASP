@@ -24,5 +24,23 @@ namespace WebApplication1.Controllers
         {
             return View(AlunoList);
         }
+
+        //POST: Aluno/Create
+        [HttpPost] 
+        public IActionResult Create(Aluno AlunoInfo) 
+        {
+            try
+            {
+                AlunoList.Add(
+                    new Aluno { ID = AlunoInfo.ID, Nome = AlunoInfo.Nome, Idade = AlunoInfo.Idade }
+                );
+
+                return RedirectToAction(nameof(Index)); 
+            }
+            catch
+            {
+                return View();
+            }
+        } 
     } 
 }
