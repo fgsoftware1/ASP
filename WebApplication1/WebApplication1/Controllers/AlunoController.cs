@@ -25,6 +25,11 @@ namespace WebApplication1.Controllers
             return View(AlunoList);
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         //POST: Aluno/Create
         [HttpPost] 
         public IActionResult Create(Aluno AlunoInfo) 
