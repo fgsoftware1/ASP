@@ -1,0 +1,48 @@
+﻿@model IEnumerable<testeMysql.Models.Sumario>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Sumario1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disciplina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AlunosPresented)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sumario1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disciplina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlunosPresented)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdSumario">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdSumario">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdSumario">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
