@@ -443,3 +443,8 @@ C:\Users\gabri\Desktop\projects\ASP\testeMysql\bin\Debug\net5.0\runtimes\win-x86
 C:\Users\gabri\Desktop\projects\ASP\testeMysql\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\gabri\Desktop\projects\ASP\testeMysql\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\gabri\Desktop\projects\ASP\testeMysql\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Sumarios\Create.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Sumarios\Delete.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Sumarios\Details.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Sumarios\Edit.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Sumarios\Index.cshtml.g.cs
