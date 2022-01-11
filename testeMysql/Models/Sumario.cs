@@ -10,6 +10,7 @@ namespace testeMysql.Models
         public int IdSumario { get; set; }
         public string Sumario1 { get; set; }
         public string Disciplina { get; set; }
-        public int AlunosPresented { get; set; }
+        public int AlunosPresentes { get; set; }
+        public int AlunosFalta { get; set; }
     }
 }

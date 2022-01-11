@@ -44,9 +44,13 @@ namespace testeMysql.Models
                     .HasColumnType("int(3)")
                     .HasColumnName("ID_Sumario");
 
-                entity.Property(e => e.AlunosPresented)
+                entity.Property(e => e.AlunosFalta)
                     .HasColumnType("int(2)")
-                    .HasColumnName("Alunos_Presented");
+                    .HasColumnName("Alunos_Falta");
+
+                entity.Property(e => e.AlunosPresentes)
+                    .HasColumnType("int(2)")
+                    .HasColumnName("Alunos_Presentes");
 
                 entity.Property(e => e.Disciplina)
                     .IsRequired()
