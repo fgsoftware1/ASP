@@ -18,6 +18,7 @@ namespace testeMysql.Models
         }
 
         public virtual DbSet<Sumario> Sumarios { get; set; }
+        public virtual DbSet<Transaco> Transacoes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -60,6 +61,35 @@ namespace testeMysql.Models
                     .IsRequired()
                     .HasMaxLength(250)
                     .HasColumnName("Sumario");
+            });
+
+            modelBuilder.Entity<Transaco>(entity =>
+            {
+                entity.HasKey(e => e.IdTransacao)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("transacoes");
+
+                entity.Property(e => e.IdTransacao)
+                    .HasColumnType("int(3)")
+                    .HasColumnName("ID_Transacao");
+
+                entity.Property(e => e.Data)
+                    .IsRequired()
+                    .HasMaxLength(10);
+
+                entity.Property(e => e.Entidade).HasColumnType("int(15)");
+
+                entity.Property(e => e.NomeCliente)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnName("Nome_Cliente");
+
+                entity.Property(e => e.Produto)
+                    .IsRequired()
+                    .HasMaxLength(15);
+
+                entity.Property(e => e.Referencia).HasColumnType("int(15)");
             });
 
             OnModelCreatingPartial(modelBuilder);

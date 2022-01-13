@@ -26,7 +26,9 @@ namespace testeMysql
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<projecto_website1Context>(options => options.UseMySql("server=localhost;port=3306;user=root;database=projecto_website1", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.21-mariadb")));
+            services.AddDbContext<projecto_website1Context>(options => options.UseMySql
+            ("server=localhost;port=3306;user=root;database=projecto_website1", 
+            Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.4.21-mariadb")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

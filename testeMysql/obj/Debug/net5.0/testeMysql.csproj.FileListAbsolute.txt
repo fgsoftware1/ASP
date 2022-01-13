@@ -448,3 +448,8 @@ C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Suma
 C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Sumarios\Details.cshtml.g.cs
 C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Sumarios\Edit.cshtml.g.cs
 C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Sumarios\Index.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Transacoes\Create.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Transacoes\Delete.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Transacoes\Details.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Transacoes\Edit.cshtml.g.cs
+C:\Users\gabri\Desktop\projects\ASP\testeMysql\obj\Debug\net5.0\Razor\Views\Transacoes\Index.cshtml.g.cs
